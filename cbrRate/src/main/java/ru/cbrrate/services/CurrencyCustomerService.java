@@ -29,6 +29,7 @@ public class CurrencyCustomerService {
 		    currencyCustomerCache.put( id, new CachedCurrencyCustomer(customer) );
 	    } else {
 		    customer = cachedCurrencyCustomers.getCurrencyCustomer();
+		    log.info("Cache -> Customer. id:{}", customer);
 	    }
 
     	return customer;

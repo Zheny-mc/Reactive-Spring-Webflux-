@@ -14,17 +14,6 @@ spring.r2dbc:
 server:
   port: 8081
 
-management:
-  server:
-    port: 8091
-  endpoints:
-    enabled-by-default: false
-  endpoint:
-    health:
-      enabled: true
-      probes:
-        enabled: true
-
 app:
   cache:
     size: 365

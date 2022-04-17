@@ -4,8 +4,6 @@ plugins {
     id 'com.google.cloud.tools.jib'
 }
 
-apply from: 'jib.gradle'
-
 sourceCompatibility = JavaVersion.VERSION_17
 targetCompatibility = JavaVersion.VERSION_17
 

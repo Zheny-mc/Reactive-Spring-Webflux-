@@ -1,4 +1,4 @@
-package ru.cbrrate.controller;
+package ru.cbrrate.controllers;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -12,7 +12,6 @@ import ru.cbrrate.services.CurrencyCustomerService;
 @RestController
 @Slf4j
 @RequiredArgsConstructor
-//@RequestMapping(path = "${app.rest.api.prefix}/v1")
 @RequestMapping("/customer")
 public class CurrencyRateController {
 

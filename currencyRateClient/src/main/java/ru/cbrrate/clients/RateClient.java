@@ -1,11 +1,11 @@
 package ru.cbrrate.clients;
 
 import reactor.core.publisher.Mono;
-import ru.cbrrate.model.CurrencyRate;
+import ru.cbrrate.model.CurrencyCustomer;
 
 import java.time.LocalDate;
 
 public interface RateClient {
 
-    Mono<CurrencyRate> getCurrencyRate(String currency, LocalDate date);
+    Mono<CurrencyCustomer> getCurrencyCustomer(Integer id);
 }

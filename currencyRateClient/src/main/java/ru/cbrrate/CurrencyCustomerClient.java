@@ -7,8 +7,8 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 
 
 @SpringBootApplication
-public class CurrencyRateClient {
+public class CurrencyCustomerClient {
     public static void main(String[] args) {
-        new SpringApplicationBuilder().sources(CurrencyRateClient.class).run(args);
+        new SpringApplicationBuilder().sources(CurrencyCustomerClient.class).run(args);
     }
 }

@@ -1,4 +1,4 @@
-package ru.cbrrate.controller;
+package ru.cbrrate.controllers;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ExceptionHandler;
