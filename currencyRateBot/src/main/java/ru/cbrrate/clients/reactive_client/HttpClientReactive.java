@@ -1,4 +1,4 @@
-package ru.cbrrate.clients;
+package ru.cbrrate.clients.reactive_client;
 
 import reactor.core.publisher.Mono;
 

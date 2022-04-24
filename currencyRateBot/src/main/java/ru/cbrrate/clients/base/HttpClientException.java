@@ -1,4 +1,4 @@
-package ru.cbrrate.clients;
+package ru.cbrrate.clients.base;
 
 public class HttpClientException extends RuntimeException {
     public HttpClientException(String msg) {

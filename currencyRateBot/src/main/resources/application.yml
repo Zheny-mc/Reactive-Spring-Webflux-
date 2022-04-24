@@ -1,16 +1,5 @@
 server:
-  port: 8082
-
-management:
-  server:
-    port: 8092
-  endpoints:
-    enabled-by-default: false
-  endpoint:
-    health:
-      enabled: true
-      probes:
-        enabled: true
+  port: 8083
 
 app:
   rest:

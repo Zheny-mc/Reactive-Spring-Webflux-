@@ -1,4 +1,4 @@
-package ru.cbrrate.clients;
+package ru.cbrrate.clients.currency_rate_client;
 
 import reactor.core.publisher.Mono;
 import ru.cbrrate.model.CurrencyRate;

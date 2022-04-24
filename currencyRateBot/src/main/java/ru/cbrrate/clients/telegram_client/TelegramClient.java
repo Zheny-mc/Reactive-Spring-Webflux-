@@ -1,4 +1,4 @@
-package ru.cbrrate.clients;
+package ru.cbrrate.clients.telegram_client;
 
 import ru.cbrrate.model.GetUpdatesRequest;
 import ru.cbrrate.model.GetUpdatesResponse;

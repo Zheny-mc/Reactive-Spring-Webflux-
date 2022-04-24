@@ -1,39 +1,22 @@
 ###
-POST https://api.telegram.org/bot[token]/getUpdates
+POST https://api.telegram.org/bot5274095592:AAG3dGQeLDE5_JnOH05WbPqjFEdk8b3JWOQ/getUpdates
 Accept: */*
 Content-Type: application/json
 Cache-Control: no-cache
 
 {
-  "offset": 953141214
+  "offset": 1
 }
 
 ###
-POST https://api.telegram.org/bot[token]/sendMessage
+POST https://api.telegram.org/bot5274095592:AAG3dGQeLDE5_JnOH05WbPqjFEdk8b3JWOQ/sendMessage
 Accept: */*
 Content-Type: application/json
 Cache-Control: no-cache
 
 {
-  "chat_id": "506783844",
+  "chat_id": "1163778484",
   "text": "testOk2",
-  "reply_to_message_id": "4"
+  "reply_to_message_id": "2"
 }
 ###############################################
-###
-GET http://localhost:8092/actuator/health
-Accept: */*
-Content-Type: application/json
-Cache-Control: no-cache
-
-###
-GET http://localhost:8092/actuator/health/liveness
-Accept: */*
-Content-Type: application/json
-Cache-Control: no-cache
-
-###
-GET http://localhost:8092/actuator/health/readiness
-Accept: */*
-Content-Type: application/json
-Cache-Control: no-cache

@@ -4,7 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Mono;
-import ru.cbrrate.clients.CurrencyRateClient;
+import ru.cbrrate.clients.currency_rate_client.CurrencyRateClient;
 import ru.cbrrate.model.MessageTextProcessorResult;
 import ru.cbrrate.services.DateTimeProvider;
 

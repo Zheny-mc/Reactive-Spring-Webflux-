@@ -1,7 +1,7 @@
 package ru.cbrrate.services;
 
 import lombok.extern.slf4j.Slf4j;
-import ru.cbrrate.clients.TelegramClient;
+import ru.cbrrate.clients.telegram_client.TelegramClient;
 import ru.cbrrate.model.GetUpdatesRequest;
 import ru.cbrrate.model.GetUpdatesResponse;
 import ru.cbrrate.model.SendMessageRequest;

@@ -1,4 +1,4 @@
-package ru.cbrrate.clients;
+package ru.cbrrate.clients.reactive_client;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.MediaType;

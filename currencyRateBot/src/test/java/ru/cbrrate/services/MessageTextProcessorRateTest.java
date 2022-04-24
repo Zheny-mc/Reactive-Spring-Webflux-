@@ -3,7 +3,7 @@ package ru.cbrrate.services;
 import org.junit.jupiter.api.Test;
 import reactor.core.publisher.Mono;
 import reactor.test.StepVerifier;
-import ru.cbrrate.clients.CurrencyRateClient;
+import ru.cbrrate.clients.currency_rate_client.CurrencyRateClient;
 import ru.cbrrate.model.CurrencyRate;
 import ru.cbrrate.model.MessageTextProcessorResult;
 import ru.cbrrate.services.processors.MessageTextProcessorRate;

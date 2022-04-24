@@ -8,7 +8,7 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import ru.cbrrate.services.LastUpdateIdKeeper;
-import ru.cbrrate.clients.TelegramClient;
+import ru.cbrrate.clients.telegram_client.TelegramClient;
 import ru.cbrrate.services.TelegramException;
 import ru.cbrrate.services.TelegramService;
 import ru.cbrrate.services.TelegramServiceImpl;
@@ -48,6 +48,7 @@ public class ApplicationConfig {
         return new TelegramClientConfig(url, token, refreshRateMs);
     }
 
+    // -------------------------------main run----------------------------------------
     @Bean
     public TelegramImporterScheduled telegramImporterScheduled(TelegramClient telegramClient,
                                                                TelegramClientConfig telegramClientConfig,
@@ -56,6 +57,7 @@ public class ApplicationConfig {
         var telegramService = new TelegramServiceImpl(telegramClient, processorGeneral, lastUpdateIdKeeper);
         return new TelegramImporterScheduled(telegramService, telegramClientConfig);
     }
+    // -------------------------------end main-----------------------------------------
 
     public static class TelegramImporterScheduled {
         public TelegramImporterScheduled(TelegramService telegramService, TelegramClientConfig telegramClientConfig) {

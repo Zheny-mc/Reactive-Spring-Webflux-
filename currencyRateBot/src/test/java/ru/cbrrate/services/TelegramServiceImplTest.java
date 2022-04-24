@@ -2,7 +2,7 @@ package ru.cbrrate.services;
 
 import org.junit.jupiter.api.Test;
 import reactor.core.publisher.Mono;
-import ru.cbrrate.clients.TelegramClient;
+import ru.cbrrate.clients.telegram_client.TelegramClient;
 import ru.cbrrate.model.GetUpdatesRequest;
 import ru.cbrrate.model.GetUpdatesResponse;
 import ru.cbrrate.model.SendMessageRequest;

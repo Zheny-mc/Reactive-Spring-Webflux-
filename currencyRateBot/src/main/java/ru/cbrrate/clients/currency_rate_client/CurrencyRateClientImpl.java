@@ -1,10 +1,12 @@
-package ru.cbrrate.clients;
+package ru.cbrrate.clients.currency_rate_client;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Mono;
+import ru.cbrrate.clients.reactive_client.HttpClientReactive;
+import ru.cbrrate.clients.base.HttpClientException;
 import ru.cbrrate.config.CurrencyRateClientConfig;
 import ru.cbrrate.model.CurrencyRate;
 
