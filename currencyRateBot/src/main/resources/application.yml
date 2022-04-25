@@ -7,4 +7,4 @@ app:
       prefix: /api
   telegram:
     url: https://api.telegram.org
-    refresh-rate-ms: 3000
+    refresh-rate-ms: 2000
