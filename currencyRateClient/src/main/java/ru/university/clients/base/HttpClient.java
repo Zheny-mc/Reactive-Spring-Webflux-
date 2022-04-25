@@ -1,4 +1,4 @@
-package ru.university.clients;
+package ru.university.clients.base;
 
 import reactor.core.publisher.Mono;
 

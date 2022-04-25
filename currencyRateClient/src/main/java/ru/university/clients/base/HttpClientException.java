@@ -1,4 +1,4 @@
-package ru.university.clients;
+package ru.university.clients.base;
 
 public class HttpClientException extends RuntimeException {
     public HttpClientException(String msg) {

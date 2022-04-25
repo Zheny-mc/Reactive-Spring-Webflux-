@@ -4,7 +4,7 @@ import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 @Data
-@ConfigurationProperties(prefix = "cbr-rate-client")
-public class CbrRateClientConfig {
+@ConfigurationProperties(prefix = "customer-client")
+public class CbrCustomerClientConfig {
     String url;
 }

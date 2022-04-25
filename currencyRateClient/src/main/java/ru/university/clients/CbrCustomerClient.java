@@ -5,7 +5,9 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Mono;
-import ru.university.config.CbrRateClientConfig;
+import ru.university.clients.base.HttpClient;
+import ru.university.clients.base.HttpClientException;
+import ru.university.config.CbrCustomerClientConfig;
 import ru.university.model.CurrencyCustomer;
 
 @Service("user")
@@ -13,7 +15,7 @@ import ru.university.model.CurrencyCustomer;
 @Slf4j
 public class CbrCustomerClient implements RateClient {
 
-    private final CbrRateClientConfig config;
+    private final CbrCustomerClientConfig config;
     private final HttpClient httpClient;
     private final ObjectMapper objectMapper;
 

@@ -1,4 +1,4 @@
-package ru.university.clients;
+package ru.university.clients.base;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.MediaType;
