@@ -13,7 +13,6 @@ dependencies {
     implementation 'ch.qos.logback:logback-classic'
     implementation 'org.ehcache:ehcache'
 
-
     compileOnly 'org.projectlombok:lombok'
     testCompileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
