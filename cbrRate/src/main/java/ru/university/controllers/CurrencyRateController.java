@@ -2,12 +2,16 @@ package ru.university.controllers;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.boot.web.server.Http2;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 import ru.university.model.Customer;
 import ru.university.repo.CustomerRepository;
 import ru.university.services.CurrencyCustomerService;
+
+import java.util.Optional;
 
 @RestController
 @Slf4j
@@ -40,12 +44,16 @@ public class CurrencyRateController {
 					c.setName(name);
 					return c;
 				}).flatMap( c -> repository.save(c));
-
 	}
 
 	@DeleteMapping("/{id}")
 	public Mono<Void> deleteCustomer(@PathVariable Integer id){
-		return repository.deleteById(id);
+		log.info("delete customer id: {}", id);
+		return repository.findById(id)
+				.map(c -> {
+					log.info("name: {}", c.getName());
+					return c;
+				}).flatMap(c -> repository.deleteById(c.getId()));
 	}
 
 }
