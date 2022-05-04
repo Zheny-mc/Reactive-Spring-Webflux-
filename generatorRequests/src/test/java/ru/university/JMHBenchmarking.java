@@ -7,12 +7,25 @@ import org.openjdk.jmh.runner.Runner;
 import org.openjdk.jmh.runner.RunnerException;
 import org.openjdk.jmh.runner.options.Options;
 import org.openjdk.jmh.runner.options.OptionsBuilder;
+import org.springframework.web.reactive.function.client.WebClient;
 
 public class JMHBenchmarking {
 	@Benchmark
 	@BenchmarkMode(Mode.AverageTime)
-	public void doExection() throws InterruptedException {
-		Thread.sleep(1000);
+	public void doExection() {
+		String URL = "http://localhost:8081/customer";
+		Integer id = 3;
+		var urlWithParams = String.format("%s/%s", URL, id);
+
+		WebClient client = WebClient.create();
+
+		WebClient.ResponseSpec responseSpec = client.get()
+				.uri(urlWithParams)
+				.retrieve();
+
+		String responseBody = responseSpec.bodyToMono(String.class).block();
+
+		System.out.println("response = " + responseBody);
 	}
 
 	public static void main(String[] args) throws RunnerException {
