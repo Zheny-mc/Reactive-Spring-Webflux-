@@ -1,6 +1,6 @@
-rootProject.name = 'currency-rate'
-include 'cbrRate'
-include 'currencyRateClient'
-include 'currencyRateBot'
+rootProject.name = 'application_acceptance_system'
+include 'adapterBD'
+include 'acceptingApplications'
+include 'acceptingApplicationBot'
 include 'generatorRequests'
 
