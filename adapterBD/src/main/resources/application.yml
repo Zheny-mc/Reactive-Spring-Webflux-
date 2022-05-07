@@ -12,7 +12,7 @@ spring.r2dbc:
     max-size: 30
 
 server:
-  port: 8081
+  port: 9081
 
 app:
   cache:
@@ -20,9 +20,6 @@ app:
   rest:
     api:
       prefix: /api
-
-cbr:
-  url: "https://cbr.ru/scripts/XML_daily.asp"
 
 
 

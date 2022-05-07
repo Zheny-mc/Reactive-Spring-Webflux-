@@ -17,8 +17,6 @@ dependencies {
     implementation group: 'org.springframework.boot', name: 'spring-boot-starter-data-r2dbc', version: '2.6.6'
     // https://mvnrepository.com/artifact/io.r2dbc/r2dbc-postgresql
     implementation group: 'io.r2dbc', name: 'r2dbc-postgresql', version: '0.8.12.RELEASE'
-    // https://mvnrepository.com/artifact/org.postgresql/postgresql
-    //implementation group: 'org.postgresql', name: 'postgresql', version: '42.3.3'
 
 
     compileOnly 'org.projectlombok:lombok'
