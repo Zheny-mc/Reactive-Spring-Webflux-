@@ -12,7 +12,7 @@ spring.r2dbc:
     max-size: 30
 
 server:
-  port: 9081
+  port: 8081
 
 app:
   cache:

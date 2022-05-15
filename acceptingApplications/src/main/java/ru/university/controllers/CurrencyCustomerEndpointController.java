@@ -22,12 +22,7 @@ public class CurrencyCustomerEndpointController {
     @GetMapping("/{id}")
     public Mono<CurrencyCustomer> getCurrencyCustomer(@PathVariable Integer id)  {
         log.info("getCurrencyCustomer in client, id:{}", id);
-        getDelay(1000);
         return currencyRateEndpointService.getCurrencyRate(id);
     }
 
-    public void getDelay(int delay) {
-        try {Thread.sleep(delay);}
-        catch (InterruptedException e) {e.printStackTrace();}
-    }
 }

@@ -20,7 +20,7 @@ public class CurrencyCustomerService {
 
     public Mono<Customer> getCustomer(Integer id){
 	    log.info("getCurrencyCustomer. id:{}", id);
-		getDelay(1000);
+		//getDelay(1000);
 		Mono<Customer> customer = null;
 
 //	    var cachedCurrencyCustomers =  currencyCustomerCache.get(id);

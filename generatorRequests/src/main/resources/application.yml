@@ -1,2 +1,1 @@
-customer-client:
-  url: "http://localhost:8081/customer"
+server.port: 8084
